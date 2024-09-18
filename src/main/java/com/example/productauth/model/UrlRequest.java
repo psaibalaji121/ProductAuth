@@ -3,6 +3,9 @@ package com.example.productauth.model;
 public class UrlRequest {
     private String url;
 
+    public UrlRequest() {
+    }
+
     public UrlRequest(String url) {
         this.url = url;
     }

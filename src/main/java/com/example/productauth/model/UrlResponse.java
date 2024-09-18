@@ -6,6 +6,31 @@ public class UrlResponse {
     private String title;
     private double price;
 
+    public UrlResponse() {
+    }
+
+
+    private String Result;
+
+    public UrlResponse(String title, double price, String result, String description, List<String> images, String sellerName, String shopName, String sellerUrl) {
+        this.title = title;
+        this.price = price;
+        Result = result;
+        this.description = description;
+        this.images = images;
+        this.sellerName = sellerName;
+        this.shopName = shopName;
+        this.sellerUrl = sellerUrl;
+    }
+
+    public String getResult() {
+        return Result;
+    }
+
+    public void setResult(String result) {
+        Result = result;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -45,11 +70,6 @@ public class UrlResponse {
     private String shopName;
     private String sellerUrl;
 
-
-    public UrlResponse() {
-    }
-
-
     public String getTitle() {
         return title;
     }
@@ -74,15 +94,7 @@ public class UrlResponse {
         this.images = images;
     }
 
-    public UrlResponse(String title, double price, String description, List<String> images, String sellerName, String shopName, String sellerUrl) {
-        this.title = title;
-        this.price = price;
-        this.description = description;
-        this.images = images;
-        this.sellerName = sellerName;
-        this.shopName = shopName;
-        this.sellerUrl = sellerUrl;
-    }
+
 
     @Override
     public String toString() {

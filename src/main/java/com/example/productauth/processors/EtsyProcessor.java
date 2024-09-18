@@ -60,6 +60,8 @@ public class EtsyProcessor implements UrlProcessor {
             }
             response.setImages(imageUrls);
 
+            response.setResult("Authentic Product");
+
         } catch (IOException e) {
             e.printStackTrace();
         }

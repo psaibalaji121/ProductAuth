@@ -48,6 +48,8 @@ public class TestSiteProcessor implements UrlProcessor {
             }
             response.setImages(imageUrls);
 
+            response.setResult("Fake Product");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
